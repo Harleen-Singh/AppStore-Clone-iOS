@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2B081F25C1ACFD009EC85D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2B081E25C1ACFD009EC85D /* UIView+Layout.swift */; };
+		CD2B082625C1B2B1009EC85D /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2B082525C1B2B1009EC85D /* VerticalStackView.swift */; };
 		CDD4AD0025BF8365003DF296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4ACFF25BF8365003DF296 /* AppDelegate.swift */; };
 		CDD4AD0225BF8365003DF296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD0125BF8365003DF296 /* SceneDelegate.swift */; };
 		CDD4AD0425BF8365003DF296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD0325BF8365003DF296 /* ViewController.swift */; };
@@ -15,9 +17,12 @@
 		CDD4AD0C25BF8366003DF296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD4AD0A25BF8366003DF296 /* LaunchScreen.storyboard */; };
 		CDD4AD1625BF84F0003DF296 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD1525BF84F0003DF296 /* BaseTabBarController.swift */; };
 		CDD4AD1B25BF8D09003DF296 /* AppSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD1A25BF8D09003DF296 /* AppSearchController.swift */; };
+		CDDB5E7E25C06D5D00CC0E4B /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB5E7D25C06D5D00CC0E4B /* SearchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2B081E25C1ACFD009EC85D /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		CD2B082525C1B2B1009EC85D /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		CDD4ACFC25BF8365003DF296 /* AppStore Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD4ACFF25BF8365003DF296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD4AD0125BF8365003DF296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		CDD4AD0D25BF8366003DF296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD4AD1525BF84F0003DF296 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CDD4AD1A25BF8D09003DF296 /* AppSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchController.swift; sourceTree = "<group>"; };
+		CDDB5E7D25C06D5D00CC0E4B /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2B082225C1AD09009EC85D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD2B081E25C1ACFD009EC85D /* UIView+Layout.swift */,
+				CD2B082525C1B2B1009EC85D /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CDD4ACF325BF8365003DF296 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +75,9 @@
 		CDD4ACFE25BF8365003DF296 /* AppStore Clone */ = {
 			isa = PBXGroup;
 			children = (
+				CD2B082225C1AD09009EC85D /* Helpers */,
+				CDD4AD1825BF8CD5003DF296 /* Controller */,
+				CDDB5E8025C06D6800CC0E4B /* Views */,
 				CDD4ACFF25BF8365003DF296 /* AppDelegate.swift */,
 				CDD4AD0125BF8365003DF296 /* SceneDelegate.swift */,
 				CDD4AD0325BF8365003DF296 /* ViewController.swift */,
@@ -67,7 +85,6 @@
 				CDD4AD0825BF8366003DF296 /* Assets.xcassets */,
 				CDD4AD0A25BF8366003DF296 /* LaunchScreen.storyboard */,
 				CDD4AD0D25BF8366003DF296 /* Info.plist */,
-				CDD4AD1825BF8CD5003DF296 /* Controller */,
 			);
 			path = "AppStore Clone";
 			sourceTree = "<group>";
@@ -79,6 +96,14 @@
 				CDD4AD1A25BF8D09003DF296 /* AppSearchController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDDB5E8025C06D6800CC0E4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB5E7D25C06D5D00CC0E4B /* SearchResultCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +178,11 @@
 			files = (
 				CDD4AD1625BF84F0003DF296 /* BaseTabBarController.swift in Sources */,
 				CDD4AD1B25BF8D09003DF296 /* AppSearchController.swift in Sources */,
+				CD2B081F25C1ACFD009EC85D /* UIView+Layout.swift in Sources */,
 				CDD4AD0425BF8365003DF296 /* ViewController.swift in Sources */,
 				CDD4AD0025BF8365003DF296 /* AppDelegate.swift in Sources */,
+				CD2B082625C1B2B1009EC85D /* VerticalStackView.swift in Sources */,
+				CDDB5E7E25C06D5D00CC0E4B /* SearchResultCell.swift in Sources */,
 				CDD4AD0225BF8365003DF296 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
