@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36E6FD1E66B7D8FF5C2AE351 /* Pods_AppStore_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5117D4D6EEB8A34A19961585 /* Pods_AppStore_Clone.framework */; };
 		CD2B081F25C1ACFD009EC85D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2B081E25C1ACFD009EC85D /* UIView+Layout.swift */; };
 		CD2B082625C1B2B1009EC85D /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2B082525C1B2B1009EC85D /* VerticalStackView.swift */; };
 		CDD4AD0025BF8365003DF296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4ACFF25BF8365003DF296 /* AppDelegate.swift */; };
@@ -18,9 +19,14 @@
 		CDD4AD1625BF84F0003DF296 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD1525BF84F0003DF296 /* BaseTabBarController.swift */; };
 		CDD4AD1B25BF8D09003DF296 /* AppSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD4AD1A25BF8D09003DF296 /* AppSearchController.swift */; };
 		CDDB5E7E25C06D5D00CC0E4B /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB5E7D25C06D5D00CC0E4B /* SearchResultCell.swift */; };
+		CDE03A8C25C34D6A00348CDC /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE03A8B25C34D6A00348CDC /* SearchResult.swift */; };
+		CDE03A9225C351C700348CDC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE03A9125C351C700348CDC /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24A7A685172D0AEF58B25E54 /* Pods-AppStore Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore Clone.release.xcconfig"; path = "Target Support Files/Pods-AppStore Clone/Pods-AppStore Clone.release.xcconfig"; sourceTree = "<group>"; };
+		3DFA2AD57D97DAC83A15D539 /* Pods-AppStore Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore Clone.debug.xcconfig"; path = "Target Support Files/Pods-AppStore Clone/Pods-AppStore Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		5117D4D6EEB8A34A19961585 /* Pods_AppStore_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStore_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2B081E25C1ACFD009EC85D /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		CD2B082525C1B2B1009EC85D /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		CDD4ACFC25BF8365003DF296 /* AppStore Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +40,8 @@
 		CDD4AD1525BF84F0003DF296 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CDD4AD1A25BF8D09003DF296 /* AppSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchController.swift; sourceTree = "<group>"; };
 		CDDB5E7D25C06D5D00CC0E4B /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		CDE03A8B25C34D6A00348CDC /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		CDE03A9125C351C700348CDC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +49,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E6FD1E66B7D8FF5C2AE351 /* Pods_AppStore_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CAA5BFEFD6D8FD3030EF6A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5117D4D6EEB8A34A19961585 /* Pods_AppStore_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD2B082225C1AD09009EC85D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +78,8 @@
 			children = (
 				CDD4ACFE25BF8365003DF296 /* AppStore Clone */,
 				CDD4ACFD25BF8365003DF296 /* Products */,
+				D1B5519EA6DFACE2FB8E77F8 /* Pods */,
+				8CAA5BFEFD6D8FD3030EF6A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				CD2B082225C1AD09009EC85D /* Helpers */,
-				CDD4AD1825BF8CD5003DF296 /* Controller */,
+				CDE03A8E25C34D8700348CDC /* Model */,
 				CDDB5E8025C06D6800CC0E4B /* Views */,
+				CDD4AD1825BF8CD5003DF296 /* Controller */,
 				CDD4ACFF25BF8365003DF296 /* AppDelegate.swift */,
 				CDD4AD0125BF8365003DF296 /* SceneDelegate.swift */,
 				CDD4AD0325BF8365003DF296 /* ViewController.swift */,
@@ -85,6 +105,7 @@
 				CDD4AD0825BF8366003DF296 /* Assets.xcassets */,
 				CDD4AD0A25BF8366003DF296 /* LaunchScreen.storyboard */,
 				CDD4AD0D25BF8366003DF296 /* Info.plist */,
+				CDE03A9125C351C700348CDC /* Service.swift */,
 			);
 			path = "AppStore Clone";
 			sourceTree = "<group>";
@@ -106,6 +127,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CDE03A8E25C34D8700348CDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDE03A8B25C34D6A00348CDC /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1B5519EA6DFACE2FB8E77F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA2AD57D97DAC83A15D539 /* Pods-AppStore Clone.debug.xcconfig */,
+				24A7A685172D0AEF58B25E54 /* Pods-AppStore Clone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDD4AD1025BF8366003DF296 /* Build configuration list for PBXNativeTarget "AppStore Clone" */;
 			buildPhases = (
+				DD16D12566949A07B52C232B /* [CP] Check Pods Manifest.lock */,
 				CDD4ACF825BF8365003DF296 /* Sources */,
 				CDD4ACF925BF8365003DF296 /* Frameworks */,
 				CDD4ACFA25BF8365003DF296 /* Resources */,
+				B3F4A5594C7D852988A067D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,17 +212,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3F4A5594C7D852988A067D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStore Clone/Pods-AppStore Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStore Clone/Pods-AppStore Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppStore Clone/Pods-AppStore Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD16D12566949A07B52C232B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppStore Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDD4ACF825BF8365003DF296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDD4AD1625BF84F0003DF296 /* BaseTabBarController.swift in Sources */,
+				CDE03A8C25C34D6A00348CDC /* SearchResult.swift in Sources */,
 				CDD4AD1B25BF8D09003DF296 /* AppSearchController.swift in Sources */,
 				CD2B081F25C1ACFD009EC85D /* UIView+Layout.swift in Sources */,
 				CDD4AD0425BF8365003DF296 /* ViewController.swift in Sources */,
 				CDD4AD0025BF8365003DF296 /* AppDelegate.swift in Sources */,
 				CD2B082625C1B2B1009EC85D /* VerticalStackView.swift in Sources */,
+				CDE03A9225C351C700348CDC /* Service.swift in Sources */,
 				CDDB5E7E25C06D5D00CC0E4B /* SearchResultCell.swift in Sources */,
 				CDD4AD0225BF8365003DF296 /* SceneDelegate.swift in Sources */,
 			);
@@ -327,6 +412,7 @@
 		};
 		CDD4AD1125BF8366003DF296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFA2AD57D97DAC83A15D539 /* Pods-AppStore Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +432,7 @@
 		};
 		CDD4AD1225BF8366003DF296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A7A685172D0AEF58B25E54 /* Pods-AppStore Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
