@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -95,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CD2B082225C1AD09009EC85D /* Helpers */,
+				CDE03A9825C36BC000348CDC /* Service */,
 				CDE03A8E25C34D8700348CDC /* Model */,
 				CDDB5E8025C06D6800CC0E4B /* Views */,
 				CDD4AD1825BF8CD5003DF296 /* Controller */,
@@ -105,7 +106,6 @@
 				CDD4AD0825BF8366003DF296 /* Assets.xcassets */,
 				CDD4AD0A25BF8366003DF296 /* LaunchScreen.storyboard */,
 				CDD4AD0D25BF8366003DF296 /* Info.plist */,
-				CDE03A9125C351C700348CDC /* Service.swift */,
 			);
 			path = "AppStore Clone";
 			sourceTree = "<group>";
@@ -135,13 +135,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CDE03A9825C36BC000348CDC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CDE03A9125C351C700348CDC /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D1B5519EA6DFACE2FB8E77F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3DFA2AD57D97DAC83A15D539 /* Pods-AppStore Clone.debug.xcconfig */,
 				24A7A685172D0AEF58B25E54 /* Pods-AppStore Clone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
